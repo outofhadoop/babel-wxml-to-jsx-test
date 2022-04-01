@@ -2,7 +2,9 @@ const babel = require("@babel/core")
 const fs = require("fs")
 const myBabelPlugin = require("./babelPlugins")
 
-const content = fs.readFileSync('./src/test.wxml')
+const content = fs.readFileSync('./src/test.js', 'utf-8')
+
+console.log(content)
 const res = babel.transformSync(content, {
 //   plugins: ['./src/babelPlugins'],
   generatorOpts: {
@@ -11,6 +13,6 @@ const res = babel.transformSync(content, {
     compact: false,
   },
 })
-fs.writeFileSync("./output.js", res.ast)
+fs.writeFileSync("./output.js", res.code)
 
 console.log(res)
