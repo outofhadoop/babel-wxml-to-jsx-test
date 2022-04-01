@@ -1,0 +1,1 @@
+# babel-wxml-to-jsx-test
