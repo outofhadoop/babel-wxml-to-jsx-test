@@ -20,5 +20,8 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
     "babel-plugin-transform-remove-console": "^6.9.4"
+  },
+  "dependencies": {
+    "wxml-parse": "^0.2.2"
   }
 }

@@ -426,13 +426,3 @@
 
 <!-- 遮罩层 -->
 <view class="maskTop" wx:if="{{maskTop}}"></view>
-<wxs module="getSubTabItem">
-  module.exports = function(list, id){
-    if(!list) return ''
-    for(var i = 0;i < list.length;i += 1){
-      if(list[i].id === id){
-        return list[i].categoryName;
-      }
-    }
-  }
-</wxs>
